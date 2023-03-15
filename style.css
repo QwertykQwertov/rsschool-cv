@@ -1,77 +1,78 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   background: url(assets/kofe_chashka_dereviannaia_poverhnost_106291_1920x1080.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
-nav {
-  position: fixed;
+header {
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   padding: 20px 100px;
-  /* padding: 0 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 50px; */
   z-index: 99;
   background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
 }
 
 h1 {
   color: #124e65;
+  user-select: none;
 }
 h2 {
   color: #ffb855;
 }
 
-.nav-list {
-  list-style: none;
-  /* display: flex;
-  justify-content: end;
-  gap: 1rem; */
-}
-
 .nav-link {
+  position: relative;
   text-decoration: none;
   font-size: large;
+  margin-left: 20px;
   color: #e2db99;
-  transition: all 0.7s;
+}
+
+.nav-link:hover {
+  display: inline-block;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 3px #e2db99d7;
+  transition: all .5s;
 }
 
 .nav-link::after{
   content: '';
   position: absolute;
+  left: 0;
+  bottom: -6px;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #e2db99;
   border-radius: 5px;
-  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s ;
 }
 
-.nav-link:hover {
-  display: inline-block;
-  /* color: rgb(126, 106, 106); */
-  text-decoration: underline;
-  /* font-weight: bold; */
-  transform: scale(1.1);
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.692);
-  transition: all 0.5s;
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform .5s;
 }
+
 
 main {
   height: 90vh;
   width: 90vw;
   margin: 0 auto;
-  /* background-color: #30b159; */
 }
 
 .about {
@@ -80,8 +81,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 5em;
-  /* border: 1px solid #00000026; */
-  border: 2px solid #fffacd70;
+  border: 1px solid #fffacd70;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   color: #e2db99;
