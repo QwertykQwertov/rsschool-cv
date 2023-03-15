@@ -14,7 +14,6 @@ body {
 }
 header {
   position: sticky;
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -99,12 +98,25 @@ main {
   line-height:  1.5em;
 }
 /* Contacts */
-.contacts {
+.contacts, .skills {
   margin-top: 40px;
   padding: 20px;
-  border: 2px solid #fffacd70;
+  border: 1px solid #fffacd70;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   color: #e2db99;
+  line-height: 1.5em;
+}
+
+.contacts a {
+  text-decoration: none;
+  font-size: large;
+  color: #e2db99;
+  transition: all .5s;
+}
+.contacts a:hover {
+  color: #e2db99d7;
+  text-shadow: 1px 1px 3px #e2db99d7;
+  transition: all .3s;
 }
 
