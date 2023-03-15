@@ -13,9 +13,10 @@ body {
   background-attachment: fixed;
 }
 header {
-  /* position: fixed;
+  position: sticky;
+  /* position: fixed; */
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
   padding: 20px 100px;
   display: flex;
