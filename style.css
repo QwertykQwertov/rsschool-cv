@@ -101,7 +101,7 @@ main {
   line-height:  1.5em;
 }
 /* Contacts */
-.contacts, .skills, .projects {
+.contacts, .skills, .projects, .education {
   margin-top: 40px;
   padding: 20px;
   border: 1px solid #fffacd70;
@@ -193,3 +193,20 @@ hr {
   padding: 20px;
   text-align: center;
 } */
+.education-description{
+  display: flex;
+  flex-direction: column;
+  
+}
+.education a {
+  text-decoration: none;
+  font: 1.2em sans-serif;
+  color: #e2db99;
+  margin-left: 20px;
+}
+.education-text{
+  margin-left: 40px;
+  padding-left: 10px;
+  border-left: 2px solid #ffb855;
+  
+}
