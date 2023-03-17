@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://QwertykQwertov.github.io/rsschool-cv/
