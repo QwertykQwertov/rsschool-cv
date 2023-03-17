@@ -73,7 +73,7 @@ h2 {
 
 
 main {
-  height: 90vh;
+  min-height: 90vh;
   width: 90vw;
   margin: 0 auto;
 }
@@ -196,17 +196,57 @@ hr {
 .education-description{
   display: flex;
   flex-direction: column;
-  
+  align-items: start;
 }
 .education a {
   text-decoration: none;
   font: 1.2em sans-serif;
   color: #e2db99;
-  margin-left: 20px;
+  margin: 10px 20px;
+  transition: all .3s;
 }
+
+.education a:hover {
+  color: #e2db99d7;
+  text-shadow: 1px 1px 3px #e2db99d7;
+  transition: all .3s;
+}
+
 .education-text{
   margin-left: 40px;
   padding-left: 10px;
   border-left: 2px solid #ffb855;
-  
+}
+
+.footer{
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: end; */
+  /* gap:5em; */
+  /* border: 1px solid #fffacd70;
+  border-radius: 20px; */
+  /* backdrop-filter: blur(10px); */
+  background-image: linear-gradient(-60deg, #f4d03f  0%, #16a085 100%);
+  line-height: 1.5em;
+}
+.footer-div {
+  width: 33%;
+  text-align: center;
+}
+.footer-div a {
+  text-decoration: none;
+  color: #124e65;
+  font-size: 1.2em;
+  transition: all .3s;
+}
+
+.copyright a:hover {
+  color: #f4d03f;
+  transition: all .3s;
+}
+.rsschool a:hover {
+  color: #16a085;
+  transition: all .3s;
 }
