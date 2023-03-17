@@ -35,11 +35,12 @@
 * Dubna State University, Russian Federation
   + Informatics and Computer Engineering
 * Higher school of economics, Russian Federation, Moscow
-  + Engineering in electronics, micro- and nanoelectronics
+  + Engineering in electronics, micro- and **nanoelectronics**
 * Courses
   + [Site on Wordpress, Site layout and transfer to CMS](https://stepik.org/course/113393/syllabus)
   + [Interactive SQL Trainer](https://stepik.org/course/63054/promo#toc)
   + [Linux Basics](https://stepik.org/course/762/promo#toc)
+  + [Introduction to Linux](https://stepik.org/course/73/promo#toc)
   + [Modern JavaScript + Vue from scratch on real projects](https://www.udemy.com/course/modern-javascript-from-beginning/)
 
 
