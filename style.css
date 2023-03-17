@@ -48,12 +48,16 @@ h2 {
   color: #e2db99;
 }
 
-.nav-link:hover {
-  display: inline-block;
-  transform: scale(1.1);
-  text-shadow: 1px 1px 3px #e2db99d7;
-  transition: all .5s;
+@media (hover: hover) {
+  .nav-link:hover {
+    display: inline-block;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 3px #e2db99d7;
+    transition: all .5s;
+  }
+
 }
+
 
 .nav-link::after {
   content: '';
@@ -66,12 +70,6 @@ h2 {
   border-radius: 5px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .5s;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
   transition: transform .5s;
 }
 
@@ -125,13 +123,6 @@ main {
   font-size: large;
   color: #e2db99;
   transition: all .5s;
-}
-
-.contacts a:hover,
-.about-text a:hover {
-  color: #e2db99d7;
-  text-shadow: 1px 1px 3px #e2db99d7;
-  transition: all .3s;
 }
 
 hr {
@@ -188,11 +179,6 @@ hr {
   transition: all .5s;
 }
 
-.projects-img:hover {
-  opacity: .5;
-  transition: all .5s;
-}
-
 /* .projects-card:hover .overlay{
   opacity: 1;
 }
@@ -225,12 +211,6 @@ hr {
   transition: all .3s;
 }
 
-.education a:hover {
-  color: #e2db99d7;
-  text-shadow: 1px 1px 3px #e2db99d7;
-  transition: all .3s;
-}
-
 .education-text {
   margin-left: 40px;
   padding-left: 10px;
@@ -248,7 +228,6 @@ hr {
   border-radius: 20px; */
   /* backdrop-filter: blur(10px); */
   background-image: linear-gradient(-60deg, #f4d03f 0%, #16a085 100%);
-  line-height: 1.5em;
 }
 
 .footer-div {
@@ -263,17 +242,132 @@ hr {
   transition: all .3s;
 }
 
-.copyright a:hover {
-  color: #f4d03f;
-  transition: all .3s;
-}
-
-.rsschool a:hover {
-  color: #16a085;
-  transition: all .3s;
-}
 
 .offset {
   height: 40px;
   visibility: hidden;
+}
+
+@media (hover: hover) {
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .5s;
+  }
+
+  .contacts a:hover,
+  .about-text a:hover {
+    color: #e2db99d7;
+    text-shadow: 1px 1px 3px #e2db99d7;
+    transition: all .3s;
+
+  }
+
+  .projects-img:hover {
+    opacity: .5;
+    transition: all .5s;
+  }
+
+  .education a:hover {
+    color: #e2db99d7;
+    text-shadow: 1px 1px 3px #e2db99d7;
+    transition: all .3s;
+  }
+
+  .copyright a:hover {
+    color: #f4d03f;
+    transition: all .3s;
+  }
+
+  .rsschool a:hover {
+    color: #16a085;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .nav-link {
+    font-size: 1em;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .about-text {
+    margin-left: 20px;
+  }
+
+  .skill-card {
+    width: 30%;
+  }
+
+  .projects-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  header {
+    position: static;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .skill-card {
+    width: 50%;
+  }
+
+  .projects-card {
+    width: 90%;
+  }
+
+  .footer-div a {
+    font-size: 1em;
+  }
+
+  .offset {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1em;
+  }
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .avatar-image {
+    width: 90%;
+    height: 90%;
+  }
+  .empty{
+    display: none;
+  }
+
 }
