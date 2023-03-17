@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
   display: flex;
@@ -15,6 +17,7 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -32,6 +35,7 @@ h1 {
   color: #124e65;
   user-select: none;
 }
+
 h2 {
   color: #ffb855;
 }
@@ -51,7 +55,7 @@ h2 {
   transition: all .5s;
 }
 
-.nav-link::after{
+.nav-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -62,7 +66,7 @@ h2 {
   border-radius: 5px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .5s ;
+  transition: transform .5s;
 }
 
 .nav-link:hover::after {
@@ -97,11 +101,15 @@ main {
   border-radius: 50%;
 }
 
-.about-text{
-  line-height:  1.5em;
+.about-text {
+  line-height: 1.5em;
 }
+
 /* Contacts */
-.contacts, .skills, .projects, .education {
+.contacts,
+.skills,
+.projects,
+.education {
   margin-top: 40px;
   padding: 20px;
   border: 1px solid #fffacd70;
@@ -111,22 +119,27 @@ main {
   line-height: 1.5em;
 }
 
-.contacts a {
+.contacts a,
+.about-text a {
   text-decoration: none;
   font-size: large;
   color: #e2db99;
   transition: all .5s;
 }
-.contacts a:hover {
+
+.contacts a:hover,
+.about-text a:hover {
   color: #e2db99d7;
   text-shadow: 1px 1px 3px #e2db99d7;
   transition: all .3s;
 }
+
 hr {
   margin: 10px 0;
-  border-color:#e2db99;
+  border-color: #e2db99;
 }
-.contacts-description p{
+
+.contacts-description p {
   margin-left: 20px;
 }
 
@@ -136,7 +149,8 @@ hr {
   justify-content: center;
 }
 
-.skill-card, .projects-card{
+.skill-card,
+.projects-card {
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -145,20 +159,23 @@ hr {
   margin-top: 20px;
   text-align: center;
 }
+
 .skill-img {
   width: 100px;
   height: 100px;
 }
-.projects-card-wrapper{
+
+.projects-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-.projects-card{
+
+.projects-card {
   width: 30%;
 }
 
-.projects-card>a{
+.projects-card>a {
   width: 100%;
   position: relative;
 }
@@ -175,6 +192,7 @@ hr {
   opacity: .5;
   transition: all .5s;
 }
+
 /* .projects-card:hover .overlay{
   opacity: 1;
 }
@@ -193,11 +211,12 @@ hr {
   padding: 20px;
   text-align: center;
 } */
-.education-description{
+.education-description {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
 .education a {
   text-decoration: none;
   font: 1.2em sans-serif;
@@ -212,13 +231,13 @@ hr {
   transition: all .3s;
 }
 
-.education-text{
+.education-text {
   margin-left: 40px;
   padding-left: 10px;
   border-left: 2px solid #ffb855;
 }
 
-.footer{
+.footer {
   margin-top: 40px;
   padding: 20px;
   display: flex;
@@ -228,13 +247,15 @@ hr {
   /* border: 1px solid #fffacd70;
   border-radius: 20px; */
   /* backdrop-filter: blur(10px); */
-  background-image: linear-gradient(-60deg, #f4d03f  0%, #16a085 100%);
+  background-image: linear-gradient(-60deg, #f4d03f 0%, #16a085 100%);
   line-height: 1.5em;
 }
+
 .footer-div {
   width: 33%;
   text-align: center;
 }
+
 .footer-div a {
   text-decoration: none;
   color: #124e65;
@@ -246,7 +267,13 @@ hr {
   color: #f4d03f;
   transition: all .3s;
 }
+
 .rsschool a:hover {
   color: #16a085;
   transition: all .3s;
+}
+
+.offset {
+  height: 40px;
+  visibility: hidden;
 }
