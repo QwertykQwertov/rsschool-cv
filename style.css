@@ -1,8 +1,6 @@
 :root {
   --main-dark: #ffb855;
   --main-light: #e2db99;
-  /* --main-dark: #613131;
-  --main-light: #e5d9d9; */
 }
 
 * {
@@ -13,14 +11,13 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: url(assets/kofe_chashka_dereviannaia_poverhnost_106291_1920x1080.jpg) no-repeat; */
   background: url(assets/gradient.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,9 +34,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  /* background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); */
-  /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%); */
-  /* background-blend-mode: multiply; */
   background-color: #323232a8;
 }
 
@@ -86,8 +80,6 @@ h2 {
 @media (hover: hover) {
   .nav-link:hover {
     display: inline-block;
-    /* transform: scale(1.1); */
-    /* text-shadow: 1px 1px 3px #e2db99d7; */
     color: var(--main-dark);
     transition: all .5s;
   }
@@ -96,18 +88,17 @@ h2 {
     transform: scaleX(1);
     transform-origin: left;
     background: var(--main-dark);
-    /* transition: transform .5s; */
   }
 
 }
-
 
 main {
   min-height: 90vh;
   width: 90vw;
   margin: 0 auto;
 }
-section{
+
+section {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
 }
@@ -118,7 +109,6 @@ section{
   display: flex;
   justify-content: space-between;
   gap: 5em;
-  /* border: 1px solid #fffacd70; */
   border: 1px solid var(--main-dark);
   border-radius: 20px;
   background: #32323254;
@@ -159,7 +149,6 @@ section{
 .education {
   margin-top: 40px;
   padding: 20px;
-  /* border: 1px solid #fffacd70; */
   border: 1px solid var(--main-dark);
   border-radius: 20px;
   background: #32323254;
@@ -233,24 +222,6 @@ hr {
   transition: all .5s;
 }
 
-/* .projects-card:hover .overlay{
-  opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-} */
 .education-description {
   display: flex;
   flex-direction: column;
@@ -278,12 +249,6 @@ hr {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  /* justify-content: end; */
-  /* gap:5em; */
-  /* border: 1px solid #fffacd70;
-  border-radius: 20px; */
-  /* backdrop-filter: blur(10px); */
-  /* background-image: linear-gradient(-60deg, #f4d03f 0%, #16a085 100%); */
   background-color: #323232a8;
 }
 
@@ -423,7 +388,6 @@ hr {
 }
 
 /* KEYFRAMES ANIMATION */
-
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -471,22 +435,13 @@ hr {
     opacity: 1;
   }
 }
-/* @keyframes viewSection {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-} */
 
 @keyframes zoomIn {
   0% {
     transform: scale(0);
     opacity: 0;
   }
+
   80% {
     transform: scale(1.1);
     opacity: 1;
