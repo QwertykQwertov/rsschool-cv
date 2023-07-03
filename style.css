@@ -63,6 +63,26 @@ h2 {
   animation-delay: calc(.2s * var(--i));
 }
 
+.nav-link-1 {
+  --i:1;
+}
+
+.nav-link-2 {
+  --i:2;
+}
+
+.nav-link-3 {
+  --i:3;
+}
+
+.nav-link-4 {
+  --i:4;
+}
+
+.nav-link-5 {
+  --i:5;
+}
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -155,6 +175,10 @@ section {
   backdrop-filter: blur(10px);
   color: var(--main-light);
   line-height: 1.5em;
+}
+
+.education-subtitle {
+  margin: 10px 10px 0;
 }
 
 .contacts a,
